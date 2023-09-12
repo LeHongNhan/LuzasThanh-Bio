@@ -1,0 +1,327 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: tzunghaor svg2eps
+%%Pages: 1
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 3
+%%DocumentNeededResources: procset Adobe_Illustrator_AI5 1.3 0
+%AI5_FileFormat 3
+%%BoundingBox: 0 0 3750 2250
+%%HiResBoundingBox: 0 0 3750.000000 2250.000000
+%AI5_ArtSize: 3750.000000 2250.000000
+%%EndComments
+
+%%BeginProlog
+100 dict begin
+/tzung_eps_state save def
+/dict_count countdictstack def
+/op_count count 1 sub def
+/Adobe_Illustrator_AI5 where
+{ pop } {
+    /tzung_strokergb [ 0 0 0 ] def
+    /tzung_compound 0 def
+    /tzung_closeop { S } def
+    /tzung_fillrule 0 def
+
+    /*u { /tzung_compound 1 def newpath /tzung_fillrule 0 def } bind def
+    /*U { /tzung_compound 0 def tzung_closeop  } bind def
+    /u {} bind def
+    /U {} bind def
+
+    /q { clipsave } bind def
+    /Q { cliprestore } bind def
+    /W { clip } bind def
+
+    /Lb { 10 {pop} repeat } bind def
+    /Ln {pop} bind def
+    /LB {} bind def
+
+
+    /w { setlinewidth } bind def
+    /J { setlinecap } bind def
+    /j { setlinejoin } bind def
+    /M { setmiterlimit } bind def
+    /d { setdash } bind def
+
+    /m { tzung_compound 0 eq { newpath /tzung_fillrule 0 def } if moveto } bind def
+    /l { lineto } bind def
+    /c { curveto } bind def
+
+    /XR { /tzung_fillrule exch def } bind def
+    /Xa { setrgbcolor } bind def
+    /XA { 3 array astore /tzung_strokergb exch def } bind def
+
+
+    /F { tzung_compound 0 eq {
+             tzung_fillrule 0 eq { fill } { eofill } ifelse
+         } {
+             /tzung_closeop {F} def
+         } ifelse } bind def
+    /f { closepath F } bind def
+    /S { tzung_compound 0 eq {
+            tzung_strokergb aload pop setrgbcolor stroke
+        } {
+             /tzung_closeop {S} def
+        } ifelse } bind def
+    /s { closepath S } bind def
+
+    /B { tzung_compound 0 eq {
+            gsave
+            tzung_fillrule 0 eq { fill } { eofill } ifelse
+            grestore
+            tzung_strokergb aload pop setrgbcolor stroke
+         } {
+             /tzung_closeop {B} def
+        } ifelse } bind def
+    /b { closepath B } bind def
+    /H { tzung_compound 0 eq {
+        }{
+            /tzung_closeop {H} def
+        } ifelse} bind def
+    /h { closepath } bind def
+    /N { tzung_compound 0 eq {
+        }{
+            /tzung_closeop {N} def
+        } ifelse} bind def
+    /n { closepath N } bind def
+
+
+    /Bn { /dict_gradients exch dict def} bind def
+    /Bd { /tmp_ngradstop exch def /tmp_shadingtype exch def } bind def  %leaves gradient name in stack
+    /BD { ]  % this handles only stops that have CMYKRGB color definitions
+        % linear gradient stops must be in reverse order, radials in normal order
+        aload
+        pop
+        /tmp_boundaries tmp_ngradstop array def
+        /tmp_colors tmp_ngradstop array def
+        tmp_shadingtype 0 eq {
+            0 1 tmp_ngradstop 1 sub   % for i=0; i<= number of gradient stops - 1; i++
+        } {
+            tmp_ngradstop 1 sub -1 0   % for i=number of gradient stops - 1; i >= 0; i++
+        } ifelse
+        {
+            /loopvar exch def
+            100 div
+            tmp_boundaries  loopvar
+            3 -1 roll put    %  obj array i => array i obj
+            pop % assume gradient middle is always 50
+            pop % assume color type is always 2 (CMYKRGB)
+            3 array astore
+            tmp_colors loopvar
+            3 -1 roll put
+            pop pop pop pop % drop CMYK values
+        } for
+
+        tmp_ngradstop 2 eq {
+            /tmp_function 5 dict def
+            tmp_boundaries 0 get tmp_boundaries 1 get 2 array astore
+            tmp_function /Domain 3 -1 roll put
+            tmp_function /FunctionType 2 put
+            tmp_function /C0  tmp_colors 0 get put
+            tmp_function /C1 tmp_colors 1 get put
+            tmp_function /N 1 put
+
+        } {
+            /tmp_functions tmp_ngradstop 1 sub array def
+
+            0 1 tmp_ngradstop 2 sub {
+                /loopvar exch def
+                /tmp_function 5 dict def
+                tmp_function /Domain [0 1]  put
+                tmp_function /FunctionType 2 put
+                tmp_function /C0  tmp_colors loopvar get put
+                tmp_function /C1 tmp_colors loopvar 1 add get put
+                tmp_function /N 1 put
+                tmp_functions loopvar tmp_function put
+            } for
+
+
+            /tmp_function 5 dict def
+            tmp_boundaries 0 get tmp_boundaries tmp_ngradstop 1 sub get 2 array astore
+            tmp_function /Domain 3 -1 roll  put
+            tmp_function /FunctionType 3 put
+            tmp_boundaries aload pop
+            tmp_ngradstop -1 roll pop pop % remove first and last bounds
+            tmp_ngradstop 2 sub array astore
+            tmp_function /Bounds 3 -1 roll put
+            tmp_function /Functions tmp_functions put
+
+            tmp_ngradstop 1 sub {
+                0 1
+            } repeat
+            tmp_ngradstop 1 sub 2 mul array astore
+            tmp_function /Encode 3 -1 roll put
+
+        } ifelse
+
+        /tmp_shading 6 dict def
+        tmp_shadingtype 0 eq {
+            tmp_shading /ShadingType 2 put
+            tmp_shading /Coords [ 0 0 1 0 ] put
+        } {
+            tmp_shading /ShadingType 3 put
+            tmp_shading /Coords [ 0 0 0 0 0 1 ] put
+        } ifelse
+        tmp_shading /ColorSpace /DeviceRGB put
+        tmp_shading /Domain [0 1] put
+        tmp_shading /Extend[ true true] put
+        tmp_shading /Function tmp_function put
+
+        /tmp_gradient 2 dict def
+        tmp_gradient /PatternType 2 put
+        tmp_gradient /Shading tmp_shading put
+
+        dict_gradients exch tmp_gradient put % gradient's name is on the top of the stack from Bd operator
+
+    } bind def
+    /Lb { 10 { pop } repeat } bind def
+    /Ln { pop } bind def
+    /Bb { } bind def
+
+    /Bg {
+        6 { pop } repeat
+        gsave
+        4 2 roll
+        translate
+        exch
+        rotate
+        dup scale
+         exch pop % remove Bg flag
+        dict_gradients exch get % now gradient name is on top of the stack
+         [ 1 0 0 1 0 0 ]
+        makepattern
+        /pattern_tmp exch def
+        grestore
+        pattern_tmp  setpattern
+         gsave % save for after pattern fil for possible stroke
+    } def
+    /BB { grestore 2 eq { s } if } bind def
+    /LB { } bind def
+
+} ifelse
+
+%%EndProlog
+
+%%BeginSetup
+/Adobe_Illustrator_AI5 where
+{
+    pop
+    Adobe_Illustrator_AI5 /initialize get exec
+} if
+
+1 Bn
+
+%AI5_BeginGradient: (l_linearGradient606)
+(l_linearGradient606) 0 2 Bd
+[
+0.164706 0.035294 0.000000 0.000000 0.835294 0.964706 1.000000 2 50 100.000000 %_Bs
+0.666667 0.133333 0.000000 0.000000 0.333333 0.866667 1.000000 2 50 0.000000 %_Bs
+BD
+%AI5_EndGradient
+
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox: 0 0 3750 2250
+%%EndPageSetup
+
+
+%AI5_BeginLayer
+1 1 1 1 0 0 0 0 0 0 Lb
+(Layer 1) Ln
+
+ 
+%AI3_Note: rect212
+ 3.750010 w 1 J 8.181964 2237.401894 m 3742.172693 2237.401894 l 
+3742.172693 5.624221 l 8.181964 5.624221 l 8.181964 2237.401894 l 
+Bb 1 (l_linearGradient606) 1843.649894 2125.508513 -90.820437 
+1573.409693 1 0 0 1 0 0 Bg f 0 BB
+
+
+  *u
+
+%AI3_Note: path367
+ 0.443137 0.784314 0.215686 Xa 0.198437 w 0 J 0 j 3550.883909 
+526.407685 m 3512.873608 508.864509 3488.242257 486.037358 3478.561631 
+440.523832 c 3459.879656 459.205732 3443.076055 481.419233 3408.498204 
+478.945283 c 3425.415354 469.076933 3445.521205 462.253207 3453.700331 
+440.523832 c 3269.099149 483.124133 3029.057814 543.478061 2848.766733 
+448.838332 c 2855.351283 464.202533 2864.367558 480.058958 2866.847283 
+498.559509 c 2842.077557 476.266733 2815.530481 453.728257 2780.963505 
+448.838332 c 2791.919206 462.532957 2794.233781 471.596408 2812.605556 
+480.478958 c 2727.969853 438.161107 2621.111424 482.382608 2527.831146 
+455.617582 c 2537.027271 470.561333 2542.197171 489.728408 2561.733472 
+498.559509 c 2533.084296 489.009758 2515.763795 484.214483 2502.969845 
+453.357382 c 2461.334793 482.181608 2419.806616 506.138784 2365.104614 
+498.559509 c 2374.145040 489.519083 2386.673565 482.956433 2392.224690 
+471.439358 c 2337.814588 478.694033 2292.304812 508.059534 2234.017209 
+496.300734 c 2262.131560 494.138034 2275.363886 497.753259 2272.440011 
+466.918883 c 2160.748882 459.938182 2019.730501 472.520708 1906.302297 
+428.497506 c 1916.288022 436.486056 1923.481198 446.943457 1934.307223 
+455.755282 c 1900.949697 432.415131 1858.764895 428.874831 1818.158244 
+417.196206 c 1830.866244 429.904131 1842.265345 444.211507 1865.620646 
+460.138132 c 1810.675268 428.086656 1752.274041 398.804330 1687.072339 
+387.814355 c 1645.866812 401.549555 1598.891685 396.425705 1553.726159 
+396.855380 c 1566.871634 389.187230 1584.656610 383.915404 1594.407810 
+365.213329 c 1555.794434 376.245679 1515.785757 366.773629 1474.621631 
+369.733804 c 1488.349106 361.726129 1500.640782 351.002628 1515.303282 
+344.872503 c 1486.119431 350.709303 1443.347455 358.070028 1409.078678 
+338.093178 c 1432.566879 336.415428 1456.119280 333.997803 1479.142181 
+329.052152 c 1254.147572 277.130400 1009.021913 238.259624 822.148006 
+95.977944 c 814.962931 76.465268 791.375955 42.302092 771.958004 
+5.624915 c 3742.172016 5.624915 l 3742.172016 390.322205 l 3688.220764 
+426.461781 3620.010512 440.552707 3546.363434 426.963831 c 3554.643734 
+433.738431 3580.887210 463.882432 3605.127061 465.385208 c 3571.745160 
+465.385208 3539.584109 471.449933 3512.462533 449.564857 c 3517.507933 
+482.359733 3527.160508 503.207184 3550.883909 526.407685 c f
+ 1934.307223 455.755282 m 1936.301773 457.150882 1938.274048 
+458.594782 1940.203198 460.138132 c 1938.097198 458.745007 1936.164673 
+457.267207 1934.307223 455.755282 c f
+
+*U 
+
+ 
+%AI3_Note: path42
+ 0.266667 0.470588 0.129412 Xa 0.198437 w 0 J 0 j 1750.476666 
+258.837825 m 1712.465915 239.832449 1660.533813 210.463048 1653.293012 
+168.433496 c 1635.152162 188.388522 1617.126211 205.656148 1583.229585 
+204.594673 c 1588.118685 195.427572 1599.589560 184.750497 1601.310136 
+170.693771 c 1565.141234 193.945197 1528.317958 207.249448 1483.784231 
+202.334398 c 1507.118307 200.539423 1537.217908 186.700947 1542.547933 
+163.913021 c 1448.627005 176.435772 1337.400651 170.905346 1241.953172 
+152.613221 c 1256.125922 170.329196 1266.231648 185.362647 1289.415574 
+195.555072 c 1252.946822 192.749772 1223.396296 188.898372 1199.011245 
+161.652746 c 1178.016870 172.149971 1151.183219 180.800772 1119.906792 
+172.954046 c 1136.749393 167.771696 1149.017368 170.382221 1160.589869 
+150.352946 c 947.936361 166.927721 738.949978 177.370122 526.667015 
+151.183496 c 505.705654 170.048696 477.651806 191.927622 443.043474 
+194.125422 c 445.778709 191.663697 471.065230 181.368822 470.165058 
+155.704046 c 435.320994 187.063647 390.044347 185.374422 341.337905 
+182.824122 c 377.486527 177.262797 420.651833 169.642721 442.483907 
+140.299720 c 295.912016 140.299720 145.133270 131.137720 8.182617 
+85.356368 c 8.182617 5.624915 l 2597.150498 5.624915 l 2496.687994 
+62.013817 2367.924389 116.237994 2247.215410 101.028744 c 2252.627860 
+115.101144 2256.660085 130.995445 2263.035761 146.230870 c 2241.471835 
+142.913320 2211.432309 140.216770 2195.232533 110.068269 c 2193.089783 
+137.923570 2186.151233 173.029497 2208.794033 198.213822 c 2182.653757 
+182.965272 2165.583532 165.945596 2163.591907 132.669370 c 2146.682706 
+166.487771 2130.731856 180.471897 2082.227104 184.652247 c 2100.126754 
+170.332571 2109.586130 161.521421 2111.608955 134.929570 c 1994.707800 
+174.218322 1857.758470 186.542847 1734.656316 166.173296 c 1743.300216 
+186.918672 1747.779516 203.795548 1777.598242 209.115148 c 1745.303541 
+209.115148 1726.604915 208.935148 1700.755414 186.514047 c 1714.446665 
+209.984698 1726.930265 239.086424 1750.476666 258.837825 c f
+
+
+LB
+%AI5_EndLayer
+
+
+%%Trailer
+showpage
+count op_count sub {pop} repeat
+countdictstack dict_count sub {end} repeat
+tzung_eps_state restore
+end
+%%EOF
+
